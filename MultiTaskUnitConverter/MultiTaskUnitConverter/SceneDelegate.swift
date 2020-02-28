@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  UnitConverter
+//  MultiTaskUnitConverter
 //
-//  Created by Lambda_School_Loaner_241 on 2/26/20.
+//  Created by Lambda_School_Loaner_241 on 2/28/20.
 //  Copyright © 2020 Lambda_School_Loaner_241. All rights reserved.
 //
 
