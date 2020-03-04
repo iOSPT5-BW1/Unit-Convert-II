@@ -15,12 +15,11 @@ enum Metric {
     case deci
     case centi
     case mili
+    
 }
 
 class UnitConverterViewController: UIViewController {
-    
-    var metric: Metric = .deka
-    
+    var metric: Metric = .centi
     
     // Mark:- IBOutlets/Properties
     @IBOutlet weak var basicUnitTextField: UITextField!
@@ -39,21 +38,32 @@ class UnitConverterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+       
         
-
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
     // Mark: - IBActions
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
-        guard let userInput = basicUnitTextField.text, !userInput.isEmpty, let userInputDouble = Double(userInput) else { return }
-        
-        metricUnitTextField.text = "\(convert(userInputDouble))"
-               
+        /*  if let userInput = metricUnitTextField.text {
+         if let userInputDouble = Double(userInput) {
+         basicUnitTextField.text = "\(convert(userInputDouble))"
+         
+         }
+         
+         }  */
+        if let userInput2 = basicUnitTextField.text {
+            if let userInput2Double = Double(userInput2){
+                metricUnitTextField.text = "\(convert(userInput2Double))"
+            }
+            
+        }
     }
     
-  
+    
     @IBAction func hectoButtonPressed(_ sender: UIButton) {
         sender.isSelected.toggle()
         
@@ -63,14 +73,15 @@ class UnitConverterViewController: UIViewController {
         }
     }
     
-    // fix this
+    
     @IBAction func dekaButtonTapped(_ sender: UIButton) {
         sender.isSelected.toggle()
-               if sender.isSelected {
-                   metric = .deka
-                   metricUnitLabel.text = " deka: "
-                   
-               }
+        
+        if sender.isSelected {
+            metric = .deka
+            metricUnitLabel.text = " deka: "
+            
+        }
     }
     
     @IBAction func kiloButtonPressed(_ sender: UIButton) {
@@ -109,7 +120,7 @@ class UnitConverterViewController: UIViewController {
         }
     }
     
-// Mark :- Helper Method
+    // Mark :- Helper Method
     
     func convert(_ m: Double) -> Double {
         let hectoConversionRate = 0.01
@@ -118,23 +129,32 @@ class UnitConverterViewController: UIViewController {
         let miliConversionRate = 1000.0
         let dekaConversionRate = 0.1
         let deciConversionRate = 10.0
-    
-    switch(metric){
-    case .hecto:
-        return Double(m * hectoConversionRate)
-    case .kilo:
-        return Double(m * kiloConversionRate)
-    case .centi:
-        return Double(m * centiConversionRate)
-    case .mili:
-        return Double(m * miliConversionRate)
-    case .deka:
-        return Double(m * dekaConversionRate)
-    case .deci:
-        return Double(m * deciConversionRate)
+        
+        
+        
+        switch(metric){
+        case .hecto:
+            return Double(m * hectoConversionRate)
+        case .kilo:
+            return Double(m * kiloConversionRate)
+        case .centi:
+            return Double(m * centiConversionRate)
+        case .mili:
+            return Double(m * miliConversionRate)
+        case .deka:
+            return Double(m * dekaConversionRate)
+            
+        case .deci:
+            return Double(m * deciConversionRate)
+            
+        }
+        
+        
         
     }
-    }
     
-
+    
+    
 }
+
+

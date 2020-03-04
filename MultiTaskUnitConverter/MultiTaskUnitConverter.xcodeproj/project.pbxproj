@@ -13,6 +13,8 @@
 		923D85122408DE2E000F70E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923D85112408DE2E000F70E6 /* Assets.xcassets */; };
 		923D85152408DE2E000F70E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923D85132408DE2E000F70E6 /* LaunchScreen.storyboard */; };
 		923D851D2408E2C0000F70E6 /* UnitConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D851C2408E2C0000F70E6 /* UnitConverterViewController.swift */; };
+		9286007A240F55AC00EE54C8 /* CurrencyUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92860079240F55AC00EE54C8 /* CurrencyUnitViewController.swift */; };
+		92881F69240DFC35004692FC /* CurrencyUnitConverter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92881F68240DFC35004692FC /* CurrencyUnitConverter.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		923D85142408DE2E000F70E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923D85162408DE2E000F70E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		923D851C2408E2C0000F70E6 /* UnitConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverterViewController.swift; sourceTree = "<group>"; };
+		92860079240F55AC00EE54C8 /* CurrencyUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUnitViewController.swift; sourceTree = "<group>"; };
+		92881F68240DFC35004692FC /* CurrencyUnitConverter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyUnitConverter.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				923D85132408DE2E000F70E6 /* LaunchScreen.storyboard */,
 				923D85162408DE2E000F70E6 /* Info.plist */,
 				923D851C2408E2C0000F70E6 /* UnitConverterViewController.swift */,
+				92881F68240DFC35004692FC /* CurrencyUnitConverter.storyboard */,
+				92860079240F55AC00EE54C8 /* CurrencyUnitViewController.swift */,
 			);
 			path = MultiTaskUnitConverter;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92881F69240DFC35004692FC /* CurrencyUnitConverter.storyboard in Resources */,
 				923D85152408DE2E000F70E6 /* LaunchScreen.storyboard in Resources */,
 				923D85122408DE2E000F70E6 /* Assets.xcassets in Resources */,
 				923D85102408DE2C000F70E6 /* Main.storyboard in Resources */,
@@ -140,6 +147,7 @@
 			files = (
 				923D85092408DE2C000F70E6 /* AppDelegate.swift in Sources */,
 				923D850B2408DE2C000F70E6 /* SceneDelegate.swift in Sources */,
+				9286007A240F55AC00EE54C8 /* CurrencyUnitViewController.swift in Sources */,
 				923D851D2408E2C0000F70E6 /* UnitConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
