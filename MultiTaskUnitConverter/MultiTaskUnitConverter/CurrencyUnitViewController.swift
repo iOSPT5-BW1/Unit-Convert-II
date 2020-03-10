@@ -101,7 +101,7 @@ class CurrencyUnitViewController: UIViewController {
         case .peso:
             return money * pesoConstant
         case .pounds:
-            return money * poundsConstant
+            return Double(round(money * poundsConstant*100)/100)
         case .rupees:
             return money * rupeesConstant
             
